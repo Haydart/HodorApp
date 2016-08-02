@@ -28,7 +28,7 @@ public class HodorMessagingService extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
         String username = remoteMessage.getData().get("username");
 
-        sound = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.hodor);
+        sound = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.hodor2);
         Intent broadCastIntent = new Intent(this, SendHodorBackBroadcastReceiver.class);
         broadCastIntent.putExtra(Constants.USERNAME, username);
         broadCastIntent.setAction(Constants.SEND_BACK);

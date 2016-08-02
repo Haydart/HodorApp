@@ -1,6 +1,4 @@
 package pl.droidsonroids.hodor;
-
-<<<<<<< HEAD
 import android.content.Context;
 import android.content.SharedPreferences;
 
@@ -26,15 +24,4 @@ public class HodorPreferences {
     public String getOwnToken(){
         return FirebaseInstanceId.getInstance().getToken();
     }
-
-=======
-public class HodorPreferences {
-
-    public void setUsername(String username) {
-    }
-
-    public String getUsername() {
-        return "";
-    }
->>>>>>> origin/master
 }

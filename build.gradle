@@ -10,10 +10,7 @@ buildscript {
 		classpath 'com.google.gms:google-services:3.0.0'
 		classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
 		classpath 'me.tatarka:gradle-retrolambda:3.2.5'
-<<<<<<< HEAD
 		classpath 'com.google.gms:google-services:3.0.0'
-=======
->>>>>>> origin/master
 	}
 }
 

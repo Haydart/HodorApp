@@ -17,11 +17,8 @@ public class HodorApplication extends Application {
         super.onCreate();
         sInstance = this;
 
-<<<<<<< HEAD
         mHodorPreferences = new HodorPreferences(getApplicationContext());
-=======
-        mHodorPreferences = new HodorPreferences();
->>>>>>> origin/master
+
         mRestAdapter = new RestAdapter();
         mDatabaseHelper = new DatabaseHelper();
     }

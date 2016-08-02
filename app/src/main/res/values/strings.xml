@@ -14,8 +14,6 @@
     <string name="send_notification_msg">Do you want to send notification to %s?</string>
     <string name="send">Send</string>
     <string name="send_hodor_back">Send Hodor Back</string>
-<<<<<<< HEAD
     <string name="action_send">SEND BACK</string>
-=======
->>>>>>> origin/master
+
 </resources>
