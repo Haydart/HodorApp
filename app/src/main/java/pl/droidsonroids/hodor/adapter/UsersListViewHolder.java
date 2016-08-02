@@ -4,11 +4,16 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+<<<<<<< HEAD
 import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import pl.droidsonroids.hodor.HodorApplication;
+=======
+import butterknife.BindView;
+import butterknife.ButterKnife;
+>>>>>>> origin/master
 import pl.droidsonroids.hodor.R;
 import pl.droidsonroids.hodor.model.User;
 import pl.droidsonroids.hodor.util.DatabaseHelper;
@@ -30,6 +35,7 @@ public class UsersListViewHolder extends RecyclerView.ViewHolder {
         mTextViewUsername.setBackgroundColor(ContextCompat.getColor(mTextViewUsername.getContext(),
                 backgroundColorRes));
 
+<<<<<<< HEAD
         mDatabaseHelper.getUserFromDatabase(username, new DatabaseHelper.OnUserReceivedListener() {
             @Override
             public void onUserReceived(User friend) {
@@ -40,5 +46,12 @@ public class UsersListViewHolder extends RecyclerView.ViewHolder {
 
     private void sendPushToUser(final User friend) {
         HodorApplication.getInstance().getRestAdapter().sendPush(friend.getToken());
+=======
+        mDatabaseHelper.getUserFromDatabase(username, this::setOnClickListener);
+    }
+
+    private void setOnClickListener(final User friend) {
+        //TODO
+>>>>>>> origin/master
     }
 }

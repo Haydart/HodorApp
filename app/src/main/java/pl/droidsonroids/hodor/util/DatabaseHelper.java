@@ -29,7 +29,11 @@ public class DatabaseHelper {
                 .setValue(token);
     }
 
+<<<<<<< HEAD
     public User getUserFromDatabase(final String username, final OnUserReceivedListener listener) {
+=======
+    public void getUserFromDatabase(final String username, final OnUserReceivedListener listener) {
+>>>>>>> origin/master
         mDatabaseReference.child(Constants.DB_USER)
                 .child(username)
                 .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -44,7 +48,10 @@ public class DatabaseHelper {
 
                     }
                 });
+<<<<<<< HEAD
         return null;
+=======
+>>>>>>> origin/master
     }
 
     public void addFriendToDatabase(final User user) {

@@ -1,6 +1,9 @@
 package pl.droidsonroids.hodor.retrofit;
 
+<<<<<<< HEAD
 import pl.droidsonroids.hodor.HodorApplication;
+=======
+>>>>>>> origin/master
 import pl.droidsonroids.hodor.model.FCMMessage;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -23,8 +26,13 @@ public class RestAdapter {
                 .create(RestApi.class);
     }
 
+<<<<<<< HEAD
     public void sendPush(String to) {
         mApiManager.sendPush(new FCMMessage(to, HodorApplication.getInstance().getPreferences().getUsername())).enqueue(new Callback<Void>() {
+=======
+    public void sendPush(String to, String from) {
+        mApiManager.sendPush(new FCMMessage(to, from)).enqueue(new Callback<Void>() {
+>>>>>>> origin/master
             @Override
             public void onResponse(final Call<Void> call, final Response<Void> response) {
                 //no-op
@@ -38,8 +46,16 @@ public class RestAdapter {
     }
 
     public interface RestApi {
+<<<<<<< HEAD
         @Headers("Authorization: key=AIzaSyDfxP0GzJCYZHet1tIifkpacUeZvi72I2g")
         @POST("send")
         Call<Void> sendPush(@Body FCMMessage message);
     }
 }
+=======
+        @Headers("Authorization: key=AIzaSyCUvwOCIClx7GsDPTfDBiCgSXmHz6BDslc")
+        @POST("send")
+        Call<Void> sendPush(@Body FCMMessage message);
+    }
+}
+>>>>>>> origin/master

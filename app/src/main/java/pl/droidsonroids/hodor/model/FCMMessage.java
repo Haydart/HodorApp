@@ -15,10 +15,18 @@ public class FCMMessage {
 
     private class Data {
 
+<<<<<<< HEAD
         private String username;
 
         public Data(final String username) {
             this.username = username;
         }
+=======
+        public Data(final String username) {
+            this.username = username;
+        }
+
+        private String username;
+>>>>>>> origin/master
     }
 }

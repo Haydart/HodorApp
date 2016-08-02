@@ -2,7 +2,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'me.tatarka.retrolambda'
+<<<<<<< HEAD
 apply plugin: 'com.android.application'
+=======
+>>>>>>> origin/master
 
 android {
 	compileSdkVersion 23
@@ -41,8 +44,12 @@ dependencies {
 
 	compile 'com.squareup.retrofit2:retrofit:2.1.0'
 	compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+<<<<<<< HEAD
 	compile 'com.google.firebase:firebase-core:9.0.0'
 	compile 'com.google.firebase:firebase-messaging:9.0.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
+=======
+}
+>>>>>>> origin/master
